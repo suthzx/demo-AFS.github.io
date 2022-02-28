@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>第三章 软件模块对应情景及使用案例 &mdash; Phase Lab Tutorial  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="第四章 软件的常见错误汇总" href="%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB.html" />
+    <link rel="prev" title="第二章 软件的基本使用方法" href="%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logtrue.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E6%96%87%E4%BB%B6%E4%BF%AE%E8%AE%A2%E8%AE%B0%E5%BD%95.html">文件修订记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B%E4%B8%8E%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83.html">第一章 软件简介与运行环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">第二章 软件的基本使用方法</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第三章 软件模块对应情景及使用案例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.1 无结构信息材料数据挖掘</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">4.2 有结构信息材料数据挖掘</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB.html">第四章 软件的常见错误汇总</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE.html">第五章 参考文献</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Phase Lab Tutorial</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>第三章 软件模块对应情景及使用案例</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/软件模块对应情景及使用案例.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <hr class="docutils" id="id1" />
+<div class="section" id="id2">
+<h1>第三章 软件模块对应情景及使用案例<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id3">
+<h2>3.1 无结构信息材料数据挖掘<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>对于数据库中没有结构信息的材料，为了保证其信息最大化利用，一般使用其化学成分对其进行数据挖掘，本小结以Stanev等人的超导转变温度为例[2]，使用本软件的描述符对其原文成绩作比较。</p>
+<div class="figure align-center">
+<img alt="_images/3_1.png" src="_images/3_1.png" />
+</div>
+<p>Stanev等人的工作提供了其超导转变温度的训练数据，数据只包含了化学成分的信息，其支持材料的链接为：.. _a link: <a class="reference external" href="https://www.nature.com/articles/s41524-018-0085-8">https://www.nature.com/articles/s41524-018-0085-8</a>。使用1模式提取其数据的特征，同样采用随机森林模型对其进行训练和测试(直接使用scikit-learn的默认参数，不进行调参，称为RF-simple)</p>
+<div class="figure align-center">
+<img alt="_images/3_2.png" src="_images/3_2.png" />
+</div>
+<p>使用1模式下的描述符的R2的成绩达到了0.88，与原文中的成绩水平一致，多次10折交叉验证成绩平均值也稳定在0.88的水平,说明了1模式的特征数据在无结构的材料数据挖掘中的可靠性。</p>
+</div>
+<div class="section" id="id4">
+<h2>4.2 有结构信息材料数据挖掘<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>相比于仅是成分的描述符，有一些材料的数据是具有一些结构信息在化学式中的，合理使用这些结构上的位点信息，能够进一步提高数据挖掘的成绩。本小节以Lu等人在钙钛矿比表面积上的数据挖掘研究为例[3]，使用3模式中的n l m=1 1 3，提取钙钛矿的材料特征信息，并采用其相同的数据挖掘平台(<a class="reference external" href="http://materials-data-mining.com/ocpmdm">http://materials-data-mining.com/ocpmdm</a>)对成绩进行对比。</p>
+</div></blockquote>
+<p>Lu等人工作中使用了SVR模型，需要对特征进行筛选等操作，本节使用该平台的随机森林模型，该模型对特征具有一定的容纳性，可以省去特征筛选的操作。</p>
+<div class="figure align-center">
+<img alt="_images/3_3.png" src="_images/3_3.png" />
+</div>
+<div class="figure align-center">
+<img alt="_images/3_4.png" src="_images/3_4.png" />
+</div>
+<p>在Lu的工作中，RMSE在SVR模型下取得了最优R=0.892，最优RMSE=4.809，本例中使用模式3配合本软件默认的FillFeature文件产生out.csv文件，并使用与Lu工作相同的数据挖掘平台，以10折交叉验证下的成绩作为评判标准与Lu的工作作为对比。</p>
+<div class="figure align-center">
+<img alt="_images/3_5.png" src="_images/3_5.png" />
+</div>
+<div class="figure align-center">
+<img alt="_images/3_6.png" src="_images/3_6.png" />
+</div>
+<div class="figure align-center">
+<img alt="_images/3_7.png" src="_images/3_7.png" />
+</div>
+<p>通过测试对比，直接使用默认的FillFeature.csv文件搭配模式3生成的out.csv特征文件，其R指标为0.9378比Lu等人的工作中的SVR模型（R=0.982）略低，RMSE为5.0896也比Lu的工作（4.809）略高，但是比远超Lu工作中的其他模型，并且本例中并没有进行超参数搜索，直接使用了模型的默认参数，由此说明我们的特征具备很大的潜力，能够在有结构信息的数据挖掘工作中提供有力的帮助。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB.html" class="btn btn-neutral float-right" title="第四章 软件的常见错误汇总" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html" class="btn btn-neutral float-left" title="第二章 软件的基本使用方法" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 SHU, MGi&amp;ICQMS sutianhao@shu.edu.cn.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

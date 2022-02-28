@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>第二章 软件的基本使用方法 &mdash; Phase Lab Tutorial  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="第三章 软件模块对应情景及使用案例" href="%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%9D%97%E5%AF%B9%E5%BA%94%E6%83%85%E6%99%AF%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B.html" />
+    <link rel="prev" title="第一章 软件简介与运行环境" href="%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B%E4%B8%8E%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logtrue.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E6%96%87%E4%BB%B6%E4%BF%AE%E8%AE%A2%E8%AE%B0%E5%BD%95.html">文件修订记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B%E4%B8%8E%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83.html">第一章 软件简介与运行环境</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第二章 软件的基本使用方法</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">2.1软件的运行使用流程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">2.2 软件的输入文件分析</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">2.3 软件的输出文件介绍</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#out-csv">2.3.1使用模块1时的“out.csv”文件：</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">2.3.2使用模块2时的“out.csv”文件：</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">2.3.3使用模块3时的“out.csv”文件：</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">2.4 软件的输出文件后处理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">2.5软件的进阶使用办法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">2.5.1 更丰富的开源元素特征输入</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">2.5.2结合领域知识的特征输入</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%9D%97%E5%AF%B9%E5%BA%94%E6%83%85%E6%99%AF%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B.html">第三章 软件模块对应情景及使用案例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB.html">第四章 软件的常见错误汇总</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE.html">第五章 参考文献</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Phase Lab Tutorial</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>第二章 软件的基本使用方法</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/软件的基本使用方法.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div></div></blockquote>
+<hr class="docutils" id="id1" />
+<div class="section" id="id2">
+<h1>第二章 软件的基本使用方法<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id3">
+<h2>2.1软件的运行使用流程<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>在windos10系统下直接使用，保证：AFS.exe与data.csv，FillFeature.csv在同一个文件夹下即可。
+1．打开AFS.exe，按照控制台提示进入需要的模块，如输入1后回车即可进入1模式；
+2．检查文件名称是否合法，是否UTF-8编码，确保无误键入：ICQMSicqms，回车；
+3．等待进度条增长，产生out.csv文件，即特征文件。
+.. note:: 模式3要使用约定俗成的化学式位置对应晶格位置，详见2.3.3</p>
+</div>
+<div class="section" id="id4">
+<h2>2.2 软件的输入文件分析<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>输入文件的文件格式
+原子级标量特征提取软件指定了使用逗号作为分隔符的文件，即文件的后缀为.csv ,要求使用编码为UTF-8而非其他编码。建议使用Excel或者wps对输入文件填写后使用Notepad++打开查看编码是否为UTF-8(UTF-8-BOM也是不允许的)，以免发生乱码等现象。</p>
+<div class="figure align-center">
+<img alt="_images/2_1.png" src="_images/2_1.png" />
+</div>
+<p>“data.csv”输入文件：
+可使用Notepad++，Excel，WPS等软件创建一个空的csv文件，在此以Excel为例，在左边的第一排依次输入需要提取特征的材料化学式，并保存文件名字为“data.csv”。</p>
+<div class="figure align-center">
+<img alt="_images/2_2.png" src="_images/2_2.png" />
+</div>
+<p>注意输入文件的编码格式为UTF-8，输入的材料化学式需要在元素周期表中确实存在，不允许写化学式的简写，如PbTiO3不可简写为PTO。每一个元素后为该元素在化学式中的化学计量比，如果略去数字默认该元素的化学计量比为1。
+data.csv文件是最基本的输入文件，使用本软件的任何模块都需要该输入文件；Fillfeature.csv文件是提取物理描述符时需要的文件，应和data.csv同处于一个目录下，并都需要保持为UTF-8编码。
+“Fillfeature.csv”输入文件
+本软件提供了一系列原子级描述符特征的基本特征，详见elemstore中的各csv文件，说明书以magpie.csv（使用前重新命名为Fillfeature.csv）的内容为例作解释说明：</p>
+<div class="figure align-center">
+<img alt="_images/2_3.png" src="_images/2_3.png" />
+</div>
+<p>本文件是data.csv提取第二类特征（物理描述符）是所需要的输入文件之一，文件内容如图3所示，自左第一排是所有元素的化学符号，自左第二排开始为符号所对的元素单质物理属性特征，下表为特征栏英文对应的元素单质物理属性解释。</p>
+<div class="figure align-center">
+<img alt="_images/2_4.png" src="_images/2_4.png" />
+</div>
+</div>
+<div class="section" id="id5">
+<h2>2.3 软件的输出文件介绍<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>成功运行软件后会输出文件“out.csv”即所需要的特征文件，对应不同模块的输出，输出的特征文件也是不同的。</p>
+<div class="section" id="out-csv">
+<h3>2.3.1使用模块1时的“out.csv”文件：<a class="headerlink" href="#out-csv" title="永久链接至标题">¶</a></h3>
+<div class="figure align-center">
+<img alt="_images/2_5.png" src="_images/2_5.png" />
+</div>
+<p>对于使用模块1产生的输出文件，特征空间的维度固定为118维，即现阶段元素周期表内的118个元素每个元素各自为一个特征空间，将所有的化学计量比进行归一化，再分配每个元素空间的比重。如Zr41.2Ti13.8Cu12.5Ni10Be22.5，其化学计量比求和为和分配比重的过程为：先求和所有的化学计量比41.2+13.8+12.5+10+22.5=100，再得到Be元素的比重为22.5/100=0.225，依次类推得到所有的特征值。</p>
+</div>
+<div class="section" id="id6">
+<h3>2.3.2使用模块2时的“out.csv”文件：<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<div class="figure align-center">
+<img alt="_images/2_6.png" src="_images/2_6.png" />
+</div>
+<dl class="simple">
+<dt>对于使用模块2产生的输出文件，是对“Fillfeature.csv”的中原子特征的组合，以Number特征为例，以材料Cu1CrO2为样本对构造的特征空间进行解释。</dt><dd><p>对于每一个“Fillfeature.csv”中的原子特征首先进行了单元(Cell)的归一化，即将其原子特征与化学计量比所占的比重相乘。如Cu1CrO2中含有Cu，Cr，O三个元素，其中</p>
+</dd>
+</dl>
+<p>原子对应的周期表序号分别为：29，24和8，其中最大的元素周期表序号为Cu元素的29号，在化学计量比的归一化过程中Cu的比重为1/4=0.25，将其比重与其原子性质相乘得到0.25*29=7.25，即得到Cell_Max_Number特征数值，同理可以得到Cell_Min_Number（对应最小值的元素单质特征），Cell_range_Number（最大与最小值之差），Cell_mean_Number（属性的算数平均值），Cell_reduce_Number（属性的约化值），将一个物理属性对应的特征扩展为5个特征。其中Cell_reduce_Number对属性的约化使用了理论力学和量子力学中常用的约化物理量的概念，例如两个质量分别为m1和m2的研究对象，在他们两个组成的系统中他们的约化质量可以描述为：</p>
+<div class="figure align-center">
+<img alt="_images/2_7.png" src="_images/2_7.png" />
+</div>
+<p>约化质量是使用广泛的一物理量，在分析双粒子孤立系统的相互作用时，可以将粒子质量换成约化质量求解问题。在牛顿力学中，这等效于求解两粒子相对位移的变化；在量子力学中，这等效于冻结粒子而求解这两个粒子的波函数。在生成物理特征的空间时该软件借用了这种约化的表达办法，对应于特征标签有_reduce_的特征量。</p>
+</div>
+<div class="section" id="id7">
+<h3>2.3.3使用模块3时的“out.csv”文件：<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<div class="figure align-center">
+<img alt="_images/2_8.png" src="_images/2_8.png" />
+</div>
+<p>对于使用模块3产生的输出文件，该输入文件的案例数据为半哈斯勒的化学式数据，半哈斯勒是化学式为A:B:C=1:1:1的材料，即在选择模块3之后输入1 1 1，三个数字之间是使用一个空格进行连接的，ABC分别代表了XYZ三个位点，ABC可以使掺杂系统组成的，但是需要满足A的化学计量比为1.如Cr0.8Sb0.2MnSb0.55Sn0.45，也是满足A:B:C=1:1:1,其中Cr0.8Sb0.2对应于A，Mn对应于B，Sb0.55Sn0.45对应于C。
+在模块3的输出文件中，不仅输出了特定位点上的物理特征量，还额外生成了一些组合的物理量，以Number特征为例，所生成的特征如下表所示：</p>
+<div class="figure align-center">
+<img alt="_images/2_9.png" src="_images/2_9.png" />
+</div>
+<p>特征空间构成成分，以半哈斯勒结构为例</p>
+<div class="figure align-center">
+<img alt="_images/2_10.png" src="_images/2_10.png" />
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>2.4 软件的输出文件后处理<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<p>在模式1和模式2中，生成的“out.csv”一般是可以直接使用的，其文件格式可以兼容多种机器学习或数值分析的软件，在第五章给出两个使用案例，分别对应于Python中的机器学习库Scikit-learn和材料基因工程所搭建的数据挖掘平台。
+在模式三中，可能会因为某些物理量的分布差异大或基本物理量的缺失造成极端比值，如A/B_NpUnfilled特征中，若B的p电子没有未填充数，则会返回一个无穷大的数值，在软件中我们标记为INF，反过来，当A没有未填充数时会返回为0，用户需要根据情况判断是否使用该信息，如果不使用需要对其特征列整体进行剔除。</p>
+</div>
+<div class="section" id="id9">
+<h2>2.5软件的进阶使用办法<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id10">
+<h3>2.5.1 更丰富的开源元素特征输入<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<p>原子级标量特征软件允许自行修改“Fillfeature”文件以完成更自定义化的原子特征输输入，对于添加的物理特征参照文件中其他属性的填充格式输入即可。
+例如在基于密度泛函理论的计算中，原子的赝势是一个重要的输入文件，赝势半径在物理上一定程度代表了距核电子的分层信息，即赝势半径外的电子与其他元素的赝势发生的物理交换作用更强，基于此在做一些具有量子效应的数据挖掘时可以考虑将赝势半径作为特征放入“Fillfeature”文件中。</p>
+</div>
+<div class="section" id="id11">
+<h3>2.5.2结合领域知识的特征输入<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+<p>机器学习作为不收先验知识的影响在很多领域发挥了重要的作用，但是基于先验的知识理论，将合适的特征量放入机器学习的训练集特征中，会使得模型成绩提高以及更好地理解机器学习。例如在合金的数据挖掘中，有混合熵，混合焓等，在磁性材料的数据挖掘中使用原子磁矩，自旋轨道耦合强度等特征。类似工作还有很多</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%9D%97%E5%AF%B9%E5%BA%94%E6%83%85%E6%99%AF%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B.html" class="btn btn-neutral float-right" title="第三章 软件模块对应情景及使用案例" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B%E4%B8%8E%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83.html" class="btn btn-neutral float-left" title="第一章 软件简介与运行环境" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 SHU, MGi&amp;ICQMS sutianhao@shu.edu.cn.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
